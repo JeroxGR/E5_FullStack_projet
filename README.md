@@ -1,10 +1,14 @@
 # Application d'E-commerce avec FastAPI et ReactJS
 
 ## Par : Mohamed GRICH et Abdlehak MAHFOUD
+## Lien Vers Projet : https://drive.google.com/file/d/1DMxUjM9endnfp8aJHvk4t5UgZKFhEzBC/view?usp=sharing
 
 ### Description du Projet
 
 Notre projet consiste en une application d'e-commerce permettant de gérer des produits, des commandes, des clients, et des administrateurs. Le backend utilise FastAPI avec PostgreSQL et SQLAlchemy pour la gestion de la base de données, tandis que le frontend est développé avec ReactJS et Redux pour une gestion dynamique de l'état. Le projet inclut également l'utilisation de Docker pour containeriser l'application et faciliter son déploiement.
+
+On a eu des problèmes lors de l'importation du partie frontend car elle etait trop lourd, donc on a importer le code source dans Google Drive
+Lien vers le projet : https://drive.google.com/file/d/1DMxUjM9endnfp8aJHvk4t5UgZKFhEzBC/view?usp=sharing
 
 ### Fonctionnalités
 
