@@ -1,0 +1,35 @@
+services:
+  backend:
+    build:
+      context: ./backend  # Path to your FastAPI backend folder
+    container_name: fastapi-backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/fullstack
+
+  frontend:
+    build:
+      context: ./frontend  # Path to your ReactJS frontend folder
+    container_name: react-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  db:
+    image: postgres:13
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: fullstack
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  pgdata:
